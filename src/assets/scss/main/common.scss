@@ -1,0 +1,17 @@
+@import './vars.scss';
+
+html {
+    font-size: 10px;
+    font-family: 'Poppins', serif;
+    line-height: 167%;
+    font-weight: 400;
+    font-style: normal;
+    color: $primary-color;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1730px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
