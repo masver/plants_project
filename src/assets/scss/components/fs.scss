@@ -1,0 +1,116 @@
+@import '../main/vars.scss';
+
+.fs {
+
+
+
+    &__row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &__content {
+        padding-top: 22.8rem;
+    }
+
+    &__hashtag {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2.4rem;
+        line-height: 125%;
+        text-transform: uppercase;
+        color: $dark-color;
+        margin-bottom: 2.1rem;
+
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10rem;
+        line-height: 125px;
+        color: $dark-color;
+        max-width: 80rem;
+
+    }
+
+    &__text{}
+
+    &__btns {}
+
+    &__btn {
+        display: inline-block;
+        margin-right: 2rem;
+        padding: 2rem 3rem;
+        position: relative;
+        background-color: $secondary-color;
+        border-radius: 1rem 0 1rem 0;
+
+        &::after {
+            display: inline-block;
+            content: '';
+            position: absolute;
+            top:0;
+            bottom:0;
+            left: calc(100% - 1.5em);
+            width: 2rem;
+            background-color: $secondary-color;
+            transform: skew(-15deg);
+            border-radius: 0 0 1rem 0;
+        }
+    }
+
+    &__img {}
+
+    &__img-inner {
+        display: inline-block;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 40vw;
+            width: 40vw;
+            border-radius: 50%;
+            background-color: #fff;
+            border: 2rem solid #f6f6f6;
+            box-shadow: 0 0 0 0.5rem #fff;
+            z-index: -1;
+        }
+    }
+}
+
+.item {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: inline-flex;
+    padding: 3rem;
+
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow:
+    backdrop-filter: blur(14px);
+    border-radius: 5px;
+
+    &__img {
+
+    }
+
+    &__content {}
+
+    &:hover {
+        .item__content {
+            
+        }
+    }
+}
+
+.item--first {
+    position: absolute;
+    left: -4vw;
+    bottom: 23rem;
+    top: auto;
+    right: auto;
+    z-index: 2;
+}
